@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { cn } from "../../utils";
+import { cn } from '../../utils';
 import { ContentEditModal, DeleteModal} from "../index";
 import { MdDeleteOutline, MdOutlineEdit, FaLink, TbExternalLink } from "../icons";
 import type { ContentResponse } from "../../redux/api/contentApi";

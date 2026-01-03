@@ -5,10 +5,20 @@ export { cn } from './utils/cn';
 export * from './icons';
 
 // Components
-export { default as Button } from './components/Button';
-export { default as Input } from './components/Input';
-export { default as Modal } from './components/Modal';
-export { default as ThemeToggle, type Theme } from './components/ThemeToggle';
-export { default as LoadingSpinner } from './components/LoadingSpinner';
-export { default as Select } from './components/Select';
-export { default as Pagination } from './components/Pagination';
+import Button from './components/Button';
+import Input from './components/Input';
+import Modal from './components/Modal';
+import ThemeToggle from './components/ThemeToggle';
+import LoadingSpinner from './components/LoadingSpinner';
+import Select from './components/Select';
+import Pagination from './components/Pagination';
+
+export { 
+    Button,
+    Input,
+    Modal,
+    ThemeToggle,
+    LoadingSpinner,
+    Select,
+    Pagination
+};

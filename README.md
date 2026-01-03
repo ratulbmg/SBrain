@@ -1,15 +1,10 @@
-# NSBrain 🧠
+# SBrain 🧠
 
-#Todo first remove cn import from web and add in the ui package
-#Todo implement globalcss veriable.
-#Todo try toggle theam from ui package
-#Todo move all file to ui package and complete ui package.
-
-A modern, full-stack **Second Brain** application for managing and organizing your knowledge. Built with TypeScript, React, and Express, NSBrain helps you capture, organize, and share your thoughts, notes, and resources efficiently.
+A modern, full-stack **Second Brain** application for managing and organizing your knowledge. Built with TypeScript, React, and Express, SBrain helps you capture, organize, and share your thoughts, notes, and resources efficiently.
 
 ## 📖 About This Project
 
-NSBrain is a knowledge management system designed to help you build your personal "second brain". It allows you to:
+SBrain is a knowledge management system designed to help you build your personal "second brain". It allows you to:
 
 - ✨ **Capture Content**: Store notes, articles, and ideas with rich text support
 - 🏷️ **Organize with Tags**: Categorize your content with customizable tags
@@ -76,8 +71,8 @@ Before you begin, make sure you have the following installed:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/NSBrain.git
-cd NSBrain
+git clone https://github.com/yourusername/SBrain.git
+cd SBrain
 ```
 
 ### Step 2: Install Dependencies
@@ -100,7 +95,7 @@ cp example.env .env
 
 ```env
 # Database Configuration
-DATABASE_URL="postgresql://username:password@localhost:5432/nsbrain"
+DATABASE_URL="postgresql://username:password@localhost:5432/sbrain"
 
 # API Configuration
 API_JWT_SECRET="your-super-secret-jwt-key-change-this"
@@ -116,16 +111,16 @@ VITE_API_ENDPOINT_URL="http://localhost:3000"
 
 ### Step 4: Set Up the Database
 
-1. Create a PostgreSQL database named `nsbrain` (or your preferred name):
+1. Create a PostgreSQL database named `sbrain` (or your preferred name):
 
 ```bash
-createdb nsbrain
+createdb sbrain
 ```
 
 Or connect to PostgreSQL and run:
 
 ```sql
-CREATE DATABASE nsbrain;
+CREATE DATABASE sbrain;
 ```
 
 2. Generate Prisma Client and run migrations:
@@ -182,7 +177,7 @@ yarn dev
 ## 📁 Project Structure
 
 ```
-NSBrain/
+SBrain/
 ├── apps/
 │   ├── api/              # Backend Express API
 │   └── web/              # Frontend React application

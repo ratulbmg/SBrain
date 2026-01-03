@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { cn, handleApiError } from "../../utils";
-import { Button, Input, Select, LoadingSpinner, Modal } from "../../components";
+import { handleApiError } from "../../utils";
+import { cn } from '../../utils';
+import { Button, Input, Select, LoadingSpinner, Modal } from "@repo/ui";
 import { useUpdateContentMutation } from "../../redux/api/contentApi";
 import type { ContentResponse } from "../../redux/api/contentApi";
 import { useGetTagsQuery } from "../../redux/api/tagsApi";

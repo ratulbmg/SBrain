@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { cn } from "../../utils";
 import { ContentCard } from "../../components";
-import { Pagination, LoadingSpinner } from "../../components";
+import { Pagination, LoadingSpinner } from "@repo/ui";
 import { useGetAllContentsQuery } from "../../redux/api/contentApi";
 
 const Allcollection: React.FC = () => {

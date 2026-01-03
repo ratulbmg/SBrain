@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { cn, handleApiError } from "../../utils";
-import { Button, LoadingSpinner, Modal } from "../../components";
+import { handleApiError } from "../../utils";
+import { cn } from '../../utils';
+import { Button, LoadingSpinner, Modal } from "@repo/ui";
 import { useDeleteContentMutation } from "../../redux/api/contentApi";
 
 interface DeleteModalProps {

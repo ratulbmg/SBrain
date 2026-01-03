@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../../components'
+import { Button } from '@repo/ui'
 import { cn } from '../../utils'
 
 const Home: React.FC =() => {

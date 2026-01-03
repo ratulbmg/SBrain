@@ -1,18 +1,11 @@
 {
   "name": "@repo/ui",
   "version": "1.0.0",
+  "type": "module",
   "exports": {
     ".": "./index.ts",
     "./styles": "./styles/globals.css",
-    "./utils": "./utils/cn.ts",
-    "./icons": "./icons.ts",
-    "./button": "./components/Button.tsx",
-    "./input": "./components/Input.tsx",
-    "./modal": "./components/Modal.tsx",
-    "./theme-toggle": "./components/ThemeToggle.tsx",
-    "./loading-spinner": "./components/LoadingSpinner.tsx",
-    "./select": "./components/Select.tsx",
-    "./pagination": "./components/Pagination.tsx"
+    "./tailwind": "./tailwind.config.ts"
   },
   "peerDependencies": {
     "react": "^19.0.0",
@@ -28,6 +21,6 @@
     "@repo/typescript-config": "*",
     "@types/react": "^19.1.16",
     "eslint": "^8.57.0",
-    "typescript": "5.5.4"
+    "typescript": "5.9.2"
   }
 }
