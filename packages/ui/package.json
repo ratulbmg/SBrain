@@ -3,24 +3,19 @@
   "version": "1.0.0",
   "type": "module",
   "exports": {
-    ".": "./index.ts",
-    "./styles": "./styles/globals.css",
-    "./tailwind": "./tailwind.config.ts"
-  },
-  "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-icons": "^5.5.0"
+    ".": "./index.ts"
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
     "@types/react": "^19.1.16",
-    "eslint": "^8.57.0",
-    "typescript": "5.9.2"
+    "eslint": "^8.57.0"
   }
 }

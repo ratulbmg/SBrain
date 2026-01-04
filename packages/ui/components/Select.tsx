@@ -1,6 +1,6 @@
 import React, { useId, forwardRef } from 'react';
-import { cn } from '../../../apps/web/src/utils';
-import { IoIosArrowDown } from '../../../apps/web/src/components/icons';
+import { cn } from '../utils/cn';
+import { IoIosArrowDown } from '../icons';
 
 type SelectOption = {
     id: number | string;

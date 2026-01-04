@@ -1,5 +1,5 @@
 import React from 'react';
-import { cn } from '../../../apps/web/src/utils';
+import { cn } from '../utils/cn';
 
 interface PaginationProps {
     currentPage: number;
