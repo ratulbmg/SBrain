@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { cn } from '../../utils';
+import { cn } from '@repo/ui';
 import { ContentEditModal, DeleteModal} from "../index";
+import { Button } from "@repo/ui";
 import { MdDeleteOutline, MdOutlineEdit, FaLink, TbExternalLink } from "../icons";
 import type { ContentResponse } from "../../redux/api/contentApi";
 
@@ -77,20 +78,16 @@ const ContentCard: React.FC<ContentCardProps> = ({ content }) => {
                         <span className={cn("text-xs px-2 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300")}>
                             {content.tag}
                         </span>
-                        <button
+                        <Button
                             onClick={handleOpenUrl}
                             disabled={!content.url}
                             title="Open link in separate tab"
-                            className={cn(
-                                "flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-colors",
-                                content.url
-                                    ? "bg-gray-500 hover:bg-blue-700 text-white"
-                                    : "bg-gray-300 dark:bg-gray-700 text-gray-500 cursor-not-allowed"
-                            )}
+                            variant="secondary"
+                            className="flex items-center gap-2 text-sm"
                         >
                             <span>Open Link</span>
                             <TbExternalLink className="text-base" />
-                        </button>
+                        </Button>
                     </div>
                 </div>
             </div>

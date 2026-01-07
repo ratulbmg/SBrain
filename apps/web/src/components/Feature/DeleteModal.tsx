@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { handleApiError } from "../../utils";
-import { cn } from '../../utils';
+import { cn } from '@repo/ui';
 import { Button, LoadingSpinner, Modal } from "@repo/ui";
 import { useDeleteContentMutation } from "../../redux/api/contentApi";
 
@@ -50,15 +50,13 @@ const DeleteModal: React.FC<DeleteModalProps> = ({ isOpen, onClose, contentId })
                         variant="secondary"
                         onClick={onClose}
                         disabled={isDeleting}
-                        className="bg-black text-white hover:bg-gray-800 dark:bg-gray-800 dark:hover:bg-gray-700"
                     >
                         No
                     </Button>
                     <Button
-                        variant="delete"
+                        variant="denger"
                         onClick={handleDelete}
                         disabled={isDeleting}
-                        className="bg-red-500 hover:bg-red-600 text-white border-none"
                     >
                         {isDeleting ? (
                             <span className="flex items-center gap-2">

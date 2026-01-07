@@ -5,7 +5,7 @@ import { useLoginMutation, useSignupMutation } from '../../redux/api/authApi';
 import { useNavigate } from 'react-router-dom';
 import { jwtDecode, type JwtPayload } from 'jwt-decode';
 import { handleApiError } from '../../utils';
-import { cn } from '../../utils';
+import { cn } from '@repo/ui';
 import { saveAuthStorage } from '../../helper/authHelpers';
 
 interface CustomJwtPayload extends JwtPayload {
@@ -129,7 +129,7 @@ const SignInUpModal: React.FC<SignInUpProps> = ({ isOpen, onClose, onSuccess }) 
 
                             <div className={cn('w-full h-11 flex justify-center items-center')}>
                                 <Button
-                                    variant="LoginButton"
+                                    variant="primary"
                                     disabled={isLoading}>
                                     {isLoading
                                         ? (

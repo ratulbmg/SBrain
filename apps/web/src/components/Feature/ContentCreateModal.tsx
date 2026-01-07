@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Input, Button, LoadingSpinner, Select, Modal } from "@repo/ui";
 import { handleApiError } from "../../utils";
-import { cn } from '../../utils';
+import { cn } from '@repo/ui';
 import { useGetTagsQuery } from "../../redux/api/tagsApi";
 import { useCreateContentMutation } from "../../redux/api/contentApi";
 
@@ -121,16 +121,15 @@ const ContentCreateModal: React.FC<ContentCreateProps> = ({ isOpen, onClose, onS
 
                     <div className="pt-2 flex gap-3">
                         <Button
-                            variant="secondary"
+                            variant="primary"
                             onClick={onClose}
-                            className="flex-1 bg-black text-white hover:bg-gray-800 dark:bg-gray-800 dark:hover:bg-gray-700"
+                            disabled={isLoading || tagsLoading}
                         >
                             Cancel
                         </Button>
                         <Button
-                            variant="LoginButton"
+                            variant="primary"
                             disabled={isLoading || tagsLoading}
-                            className="flex-1"
                         >
                             {isLoading ? (
                                 <span className="flex items-center justify-center gap-2">

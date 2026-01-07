@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { handleApiError } from "../../utils";
-import { cn } from '../../utils';
+import { cn } from '@repo/ui';
 import { Button, Input, Select, LoadingSpinner, Modal } from "@repo/ui";
 import { useUpdateContentMutation } from "../../redux/api/contentApi";
 import type { ContentResponse } from "../../redux/api/contentApi";
@@ -133,17 +133,15 @@ const ContentEditModal: React.FC<EditContentFormProps> = ({ content, isOpen, onC
 
                     <div className="pt-2 flex gap-3">
                         <Button
-                            variant="secondary"
+                            variant="primary"
                             onClick={onClose}
                             disabled={isUpdating}
-                            className="flex-1 bg-black text-white hover:bg-gray-800 dark:bg-gray-800 dark:hover:bg-gray-700"
                         >
                             Cancel
                         </Button>
                         <Button
-                            variant="LoginButton"
+                            variant="primary"
                             disabled={isUpdating || tagsLoading}
-                            className="flex-1"
                         >
                             {isUpdating ? (
                                 <span className="flex items-center justify-center gap-2">
