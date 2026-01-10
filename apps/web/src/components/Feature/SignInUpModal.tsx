@@ -14,8 +14,8 @@ interface CustomJwtPayload extends JwtPayload {
 }
 
 interface SignInUpProps {
-    isOpen: boolean;      // New Prop
-    onClose: () => void;  // New Prop
+    isOpen: boolean;
+    onClose: () => void;
     onSuccess?: () => void;
 }
 
@@ -54,7 +54,7 @@ const SignInUpModal: React.FC<SignInUpProps> = ({ isOpen, onClose, onSuccess }) 
     const handleAuth = (token: string, decodedToken: CustomJwtPayload) => {
         saveAuthStorage(token, decodedToken.name, decodedToken.uniqueId);
         onSuccess?.();
-        onClose(); // Close modal on success
+        onClose();
         navigate('/dashboard');
     };
 

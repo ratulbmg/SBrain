@@ -1,5 +1,8 @@
 # SBrain 🧠
 
+#FIX DARK MODE WHITE MODE.
+#NEED TO IMPLEMENT IMAGE PREVIEWER.
+
 A modern, full-stack **Second Brain** application for managing and organizing your knowledge. Built with TypeScript, React, and Express, SBrain helps you capture, organize, and share your thoughts, notes, and resources efficiently.
 
 ## 📖 About This Project

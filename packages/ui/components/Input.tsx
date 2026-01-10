@@ -21,7 +21,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(function InputField
     const id = useId();
 
     const variantClasses = {
-        LoginInput: 'w-full px-4 py-2 text-sm text-text-300 border-b border-black/15 dark:border-white/15 focus:outline-none focus:border-b-border-input-focus dark:focus:border-b-border-input-focus-dark transition-border duration-400',
+        LoginInput: 'w-full px-4 py-2 text-sm text-black dark:text-white border-b border-black/15 dark:border-white/15 focus:outline-none focus:border-b-border-input-focus dark:focus:border-b-border-input-focus-dark transition-border duration-400',
         ContentCreateInput: 'w-full px-4 py-2 text-sm text-text-300 bg-gray-50 dark:bg-[#262626] border-b border-black/15 dark:border-white/15 focus:outline-none focus:border-b-border-input-focus dark:focus:border-b-border-input-focus-dark transition-border duration-400',
     }
 
