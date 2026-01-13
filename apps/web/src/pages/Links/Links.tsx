@@ -24,7 +24,7 @@ const Links: React.FC = () => {
     };
 
     return (
-        <div className={cn('m-auto max-w-[1536px] w-full min-h-screen h-full px-4 py-8')}>
+        <div className={cn('m-auto bg-white dark:bg-black/85 w-full min-h-screen h-full px-4 py-8')}>
             <div className="mb-8">
                 <h1 className={cn('text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2')}>
                     All Collection
