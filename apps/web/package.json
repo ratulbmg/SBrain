@@ -23,6 +23,7 @@
   "devDependencies": {
     "@gsap/react": "^2.1.2",
     "@reduxjs/toolkit": "^2.9.0",
+    "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
     "@repo/ui": "*",
     "@tailwindcss/vite": "^4.1.17",
